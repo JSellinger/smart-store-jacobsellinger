@@ -28,3 +28,30 @@
 2025-11-02 20:16:WARNING AT utils_logger.py:118: This is an example warning message.
 2025-11-02 20:16:ERROR   AT utils_logger.py:119: This is an example error message.
 2025-11-02 20:16:INFO    AT utils_logger.py:126: View the log output at C:\Projects\smart-store-jacobsellinger\project.log
+2025-11-02 20:18:INFO    AT utils_logger.py:106: Logging to file: C:\Projects\smart-store-jacobsellinger\project.log
+2025-11-02 20:18:INFO    AT data_prep.py:52: Starting data preparation...
+2025-11-02 20:18:INFO    AT data_prep.py:32: Reading raw data from C:\Projects\smart-store-jacobsellinger\data\raw\customers_data.csv.
+2025-11-02 20:18:INFO    AT data_prep.py:35: customers_data.csv: loaded DataFrame with shape 201 rows x 4 cols
+2025-11-02 20:18:INFO    AT data_prep.py:32: Reading raw data from C:\Projects\smart-store-jacobsellinger\data\raw\products_data.csv.
+2025-11-02 20:18:INFO    AT data_prep.py:35: products_data.csv: loaded DataFrame with shape 100 rows x 4 cols
+2025-11-02 20:18:INFO    AT data_prep.py:32: Reading raw data from C:\Projects\smart-store-jacobsellinger\data\raw\sales_data.csv.
+2025-11-02 20:18:INFO    AT data_prep.py:35: sales_data.csv: loaded DataFrame with shape 2001 rows x 7 cols
+2025-11-02 20:18:INFO    AT data_prep.py:64: Data preparation complete.
+2025-11-02 20:18:INFO    AT utils_logger.py:106: Logging to file: C:\Projects\smart-store-jacobsellinger\project.log
+2025-11-02 20:18:INFO    AT data_prep.py:52: Starting data preparation...
+2025-11-02 20:18:INFO    AT data_prep.py:32: Reading raw data from C:\Projects\smart-store-jacobsellinger\data\raw\customers_data.csv.
+2025-11-02 20:18:INFO    AT data_prep.py:35: customers_data.csv: loaded DataFrame with shape 201 rows x 4 cols
+2025-11-02 20:18:INFO    AT data_prep.py:32: Reading raw data from C:\Projects\smart-store-jacobsellinger\data\raw\products_data.csv.
+2025-11-02 20:18:INFO    AT data_prep.py:35: products_data.csv: loaded DataFrame with shape 100 rows x 4 cols
+2025-11-02 20:18:INFO    AT data_prep.py:32: Reading raw data from C:\Projects\smart-store-jacobsellinger\data\raw\sales_data.csv.
+2025-11-02 20:18:INFO    AT data_prep.py:35: sales_data.csv: loaded DataFrame with shape 2001 rows x 7 cols
+2025-11-02 20:18:INFO    AT data_prep.py:64: Data preparation complete.
+2025-11-02 20:21:INFO    AT utils_logger.py:106: Logging to file: C:\Projects\smart-store-jacobsellinger\project.log
+2025-11-02 20:21:INFO    AT data_prep.py:54: Starting data preparation...
+2025-11-02 20:21:INFO    AT data_prep.py:34: Reading raw data from C:\Projects\smart-store-jacobsellinger\data\raw\customers_data.csv.
+2025-11-02 20:21:INFO    AT data_prep.py:37: customers_data.csv: loaded DataFrame with shape 201 rows x 4 cols
+2025-11-02 20:21:INFO    AT data_prep.py:34: Reading raw data from C:\Projects\smart-store-jacobsellinger\data\raw\products_data.csv.
+2025-11-02 20:21:INFO    AT data_prep.py:37: products_data.csv: loaded DataFrame with shape 100 rows x 4 cols
+2025-11-02 20:21:INFO    AT data_prep.py:34: Reading raw data from C:\Projects\smart-store-jacobsellinger\data\raw\sales_data.csv.
+2025-11-02 20:21:INFO    AT data_prep.py:37: sales_data.csv: loaded DataFrame with shape 2001 rows x 7 cols
+2025-11-02 20:21:INFO    AT data_prep.py:66: Data preparation complete.

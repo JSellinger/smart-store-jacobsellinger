@@ -9,7 +9,9 @@ import pathlib
 
 import pandas as pd
 
+#root project directory change path or run python -m src.analytics_project.data_prep to run it as a module
 from .utils_logger import init_logger, logger, project_root
+
 
 # Set up paths as constants
 DATA_DIR: pathlib.Path = project_root.joinpath("data")
