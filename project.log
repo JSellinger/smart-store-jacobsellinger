@@ -23,3 +23,8 @@
 2025-11-02 20:09:WARNING AT utils_logger.py:118: This is an example warning message.
 2025-11-02 20:09:ERROR   AT utils_logger.py:119: This is an example error message.
 2025-11-02 20:09:INFO    AT utils_logger.py:126: View the log output at C:\Projects\smart-store-jacobsellinger\project.log
+2025-11-02 20:16:INFO    AT utils_logger.py:106: Logging to file: C:\Projects\smart-store-jacobsellinger\project.log
+2025-11-02 20:16:INFO    AT utils_logger.py:117: This is an example info message.
+2025-11-02 20:16:WARNING AT utils_logger.py:118: This is an example warning message.
+2025-11-02 20:16:ERROR   AT utils_logger.py:119: This is an example error message.
+2025-11-02 20:16:INFO    AT utils_logger.py:126: View the log output at C:\Projects\smart-store-jacobsellinger\project.log
