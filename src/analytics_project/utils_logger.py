@@ -25,7 +25,7 @@ import loguru
 import pathlib
 import sys
 
-from loguru import logger
+from logur import logger
 
 _is_configured: bool = False
 _log_file_path: pathlib.Path | None = None
