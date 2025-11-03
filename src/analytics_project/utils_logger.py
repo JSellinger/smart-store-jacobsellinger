@@ -20,6 +20,7 @@ Professional Applications:
     - Performance monitoring and optimization
     - Error tracking in data pipelines
 """
+
 import loguru
 import pathlib
 import sys

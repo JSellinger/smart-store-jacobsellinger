@@ -1,0 +1,20 @@
+2025-11-02 20:02:INFO    AT utils_logger.py:105: Logging to file: C:\Projects\smart-store-jacobsellinger\project.log
+2025-11-02 20:02:INFO    AT utils_logger.py:116: This is an example info message.
+2025-11-02 20:02:WARNING AT utils_logger.py:117: This is an example warning message.
+2025-11-02 20:02:ERROR   AT utils_logger.py:118: This is an example error message.
+2025-11-02 20:02:INFO    AT utils_logger.py:125: View the log output at C:\Projects\smart-store-jacobsellinger\project.log
+2025-11-02 20:03:INFO    AT utils_logger.py:105: Logging to file: C:\Projects\smart-store-jacobsellinger\project.log
+2025-11-02 20:03:INFO    AT utils_logger.py:116: This is an example info message.
+2025-11-02 20:03:WARNING AT utils_logger.py:117: This is an example warning message.
+2025-11-02 20:03:ERROR   AT utils_logger.py:118: This is an example error message.
+2025-11-02 20:03:INFO    AT utils_logger.py:125: View the log output at C:\Projects\smart-store-jacobsellinger\project.log
+2025-11-02 20:04:INFO    AT utils_logger.py:105: Logging to file: C:\Projects\smart-store-jacobsellinger\project.log
+2025-11-02 20:04:INFO    AT utils_logger.py:116: This is an example info message.
+2025-11-02 20:04:WARNING AT utils_logger.py:117: This is an example warning message.
+2025-11-02 20:04:ERROR   AT utils_logger.py:118: This is an example error message.
+2025-11-02 20:04:INFO    AT utils_logger.py:125: View the log output at C:\Projects\smart-store-jacobsellinger\project.log
+2025-11-02 20:07:INFO    AT utils_logger.py:106: Logging to file: C:\Projects\smart-store-jacobsellinger\project.log
+2025-11-02 20:07:INFO    AT utils_logger.py:117: This is an example info message.
+2025-11-02 20:07:WARNING AT utils_logger.py:118: This is an example warning message.
+2025-11-02 20:07:ERROR   AT utils_logger.py:119: This is an example error message.
+2025-11-02 20:07:INFO    AT utils_logger.py:126: View the log output at C:\Projects\smart-store-jacobsellinger\project.log
