@@ -1,4 +1,4 @@
-CustomerID,Name,Region,JoinDate,InStoreTripPercent,BroadChannel
+CustomerID,Name,Region,JoinDate,InStoreTripPercent,StatedChannelPreference
 1000,Robert Gomez,West,2/25/2024,0.037943334,Online
 1001,John Silva,East,12/1/2020,0.350672095,Physical
 1002,Mark Marshall,Central,8/8/2020,0.252671029,Online
