@@ -193,7 +193,39 @@ def validate_data(df: pd.DataFrame) -> pd.DataFrame:
     logger.info("Data validation complete")
     return df
 
+def remove_outliers(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Remove outliers based on thresholds.
+    This logic is very specific to the actual data and business rules.
 
+    Args:
+        df (pd.DataFrame): Input DataFrame.
+
+    Returns:
+        pd.DataFrame: DataFrame with outliers removed.
+    """
+    logger.info(f"FUNCTION START: remove_outliers with dataframe shape={df.shape}")
+    initial_count = len(df)
+
+    # TODO: Identify numeric columns that might have outliers.
+    # Recommended - just use ranges based on reasonable data
+    # People should not be 22 feet tall, etc.
+    # OPTIONAL ADVANCED: Use IQR method to identify outliers in numeric columns
+    # Example:
+    # for col in ['price', 'weight', 'length', 'width', 'height']:
+    #     if col in df.columns and df[col].dtype in ['int64', 'float64']:
+    #         Q1 = df[col].quantile(0.25)
+    #         Q3 = df[col].quantile(0.75)
+    #         IQR = Q3 - Q1
+    #         lower_bound = Q1 - 1.5 * IQR
+    #         upper_bound = Q3 + 1.5 * IQR
+    #         df = df[(df[col] >= lower_bound) & (df[col] <= upper_bound)]
+    #         logger.info(f"Applied outlier removal to {col}: bounds [{lower_bound}, {upper_bound}]")
+
+    removed_count = initial_count - len(df)
+    logger.info(f"Removed {removed_count} outlier rows")
+    logger.info(f"{len(df)} records remaining after removing outliers.")
+    return df
 
 
 #####################################
