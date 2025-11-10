@@ -136,3 +136,21 @@ dtype: int64
 2025-11-09 18:10:19.123 | INFO     | __main__:main:132 - ==================================
 2025-11-09 18:10:19.123 | INFO     | __main__:main:133 - FINISHED prepare_sales_data.py
 2025-11-09 18:10:19.123 | INFO     | __main__:main:134 - ==================================
+2025-11-09 18:11:03.873 | INFO     | __main__:main:89 - ==================================
+2025-11-09 18:11:03.873 | INFO     | __main__:main:90 - STARTING prepare_sales_data.py
+2025-11-09 18:11:03.873 | INFO     | __main__:main:91 - ==================================
+2025-11-09 18:11:03.873 | INFO     | __main__:main:93 - Root         : C:\Projects\smart-store-jacobsellinger
+2025-11-09 18:11:03.873 | INFO     | __main__:main:94 - data/raw     : C:\Projects\smart-store-jacobsellinger\data\raw
+2025-11-09 18:11:03.873 | INFO     | __main__:main:95 - data/prepared: C:\Projects\smart-store-jacobsellinger\data\prepared
+2025-11-09 18:11:03.873 | INFO     | __main__:main:96 - scripts      : C:\Projects\smart-store-jacobsellinger\src
+2025-11-09 18:11:03.873 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-11-09 18:11:03.874 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-jacobsellinger\data\raw\sales_data.csv
+2025-11-09 18:11:03.878 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 2001 rows and 9 columns
+2025-11-09 18:11:03.878 | INFO     | __main__:main:108 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, ReedemableStoreCryptoCurrency, WinCoins
+2025-11-09 18:11:03.878 | INFO     | __main__:main:109 - Initial dataframe shape: (2001, 9)
+2025-11-09 18:11:03.878 | INFO     | __main__:main:129 - ==================================
+2025-11-09 18:11:03.879 | INFO     | __main__:main:130 - Original shape: (2001, 9)
+2025-11-09 18:11:03.879 | INFO     | __main__:main:131 - Cleaned shape:  (2001, 9)
+2025-11-09 18:11:03.879 | INFO     | __main__:main:132 - ==================================
+2025-11-09 18:11:03.879 | INFO     | __main__:main:133 - FINISHED prepare_sales_data.py
+2025-11-09 18:11:03.879 | INFO     | __main__:main:134 - ==================================
