@@ -199,4 +199,8 @@ CustomerID,Name,Region,JoinDate,InStoreTripPercent,StatedChannelPreference
 1197,William Wilson,West,4/4/2023,0.384733073,Online
 1198,Chris Allen,south-west,10/11/2022,0.684007028,Physical
 1199,James Cooley,West,7/23/2020,0.582985565,Physical
-1005,Jessica Mora,South,8/5/2021,0.600373525,Online
+2000,Jacob Idio,South,8/5/2021,1.2,Online
+2001,Caleb Idio,South,8/5/2021,2,Online
+2002,Barry Allen,South,8/5/2021,35,Online
+2003,Santa Klaus,South,8/5/2021,1,Online
+2004,Jack Skellington,South,8/5/2021,4,Online
