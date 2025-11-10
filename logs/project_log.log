@@ -457,3 +457,85 @@ dtype: int64
 2025-11-09 19:08:59.156 | INFO     | __main__:main:274 - ==================================
 2025-11-09 19:08:59.156 | INFO     | __main__:main:275 - FINISHED prepare_products_data.py
 2025-11-09 19:08:59.156 | INFO     | __main__:main:276 - ==================================
+2025-11-09 19:10:30.640 | INFO     | __main__:main:239 - ==================================
+2025-11-09 19:10:30.640 | INFO     | __main__:main:240 - STARTING prepare_sales_data.py
+2025-11-09 19:10:30.641 | INFO     | __main__:main:241 - ==================================
+2025-11-09 19:10:30.641 | INFO     | __main__:main:243 - Root         : C:\Projects\smart-store-jacobsellinger
+2025-11-09 19:10:30.641 | INFO     | __main__:main:244 - data/raw     : C:\Projects\smart-store-jacobsellinger\data\raw
+2025-11-09 19:10:30.641 | INFO     | __main__:main:245 - data/prepared: C:\Projects\smart-store-jacobsellinger\data\prepared
+2025-11-09 19:10:30.641 | INFO     | __main__:main:246 - scripts      : C:\Projects\smart-store-jacobsellinger\src
+2025-11-09 19:10:30.641 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-11-09 19:10:30.641 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-jacobsellinger\data\raw\sales_data.csv
+2025-11-09 19:10:30.654 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 2084 rows and 9 columns
+2025-11-09 19:10:30.654 | INFO     | __main__:main:258 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, ReedemableStoreCryptoCurrency, WinCoins
+2025-11-09 19:10:30.655 | INFO     | __main__:main:259 - Initial dataframe shape: (2084, 9)
+2025-11-09 19:10:30.655 | INFO     | __main__:remove_duplicates:103 - FUNCTION START: remove_duplicates with dataframe shape=(2084, 9)
+2025-11-09 19:10:30.656 | INFO     | __main__:remove_duplicates:113 - Removed 83 duplicate rows
+2025-11-09 19:10:30.657 | INFO     | __main__:remove_duplicates:114 - 2001 records remaining after removing duplicates.
+2025-11-09 19:10:30.657 | INFO     | __main__:handle_missing_values:128 - FUNCTION START: handle_missing_values with dataframe shape=(2001, 9)
+2025-11-09 19:10:30.657 | INFO     | __main__:handle_missing_values:133 - Missing values by column before handling:
+TransactionID                    0
+SaleDate                         0
+CustomerID                       0
+ProductID                        0
+StoreID                          0
+CampaignID                       1
+SaleAmount                       0
+ReedemableStoreCryptoCurrency    0
+WinCoins                         0
+dtype: int64
+2025-11-09 19:10:30.658 | INFO     | __main__:handle_missing_values:147 - Missing values by column after handling:
+TransactionID                    0
+SaleDate                         0
+CustomerID                       0
+ProductID                        0
+StoreID                          0
+CampaignID                       1
+SaleAmount                       0
+ReedemableStoreCryptoCurrency    0
+WinCoins                         0
+dtype: int64
+2025-11-09 19:10:30.659 | INFO     | __main__:handle_missing_values:148 - 2001 records remaining after handling missing values.
+2025-11-09 19:10:30.659 | INFO     | __main__:remove_outliers:207 - FUNCTION START: remove_outliers with dataframe shape=(2001, 9)
+2025-11-09 19:10:30.659 | INFO     | __main__:remove_outliers:226 - Removed 0 outlier rows
+2025-11-09 19:10:30.659 | INFO     | __main__:remove_outliers:227 - 2001 records remaining after removing outliers.
+2025-11-09 19:10:30.659 | INFO     | __main__:validate_data:184 - FUNCTION START: validate_data with dataframe shape=(2001, 9)
+2025-11-09 19:10:30.659 | INFO     | __main__:validate_data:193 - Data validation complete
+2025-11-09 19:10:30.659 | INFO     | __main__:standardize_formats:161 - FUNCTION START: standardize_formats with dataframe shape=(2001, 9)
+2025-11-09 19:10:30.659 | INFO     | __main__:standardize_formats:171 - Completed standardizing formats
+2025-11-09 19:10:30.660 | INFO     | __main__:save_prepared_data:88 - FUNCTION START: save_prepared_data with file_name=sales_prepared.csv, dataframe shape=(2001, 9)
+2025-11-09 19:10:30.665 | INFO     | __main__:save_prepared_data:91 - Data saved to C:\Projects\smart-store-jacobsellinger\data\prepared\sales_prepared.csv
+2025-11-09 19:10:30.665 | INFO     | __main__:main:289 - ==================================
+2025-11-09 19:10:30.665 | INFO     | __main__:main:290 - Original shape: (2001, 9)
+2025-11-09 19:10:30.665 | INFO     | __main__:main:291 - Cleaned shape:  (2084, 9)
+2025-11-09 19:10:30.665 | INFO     | __main__:main:292 - ==================================
+2025-11-09 19:10:30.665 | INFO     | __main__:main:293 - FINISHED prepare_sales_data.py
+2025-11-09 19:10:30.665 | INFO     | __main__:main:294 - ==================================
+2025-11-09 19:13:00.374 | INFO     | __main__:main:171 - ==================================
+2025-11-09 19:13:00.374 | INFO     | __main__:main:172 - STARTING prepare_customers_data.py
+2025-11-09 19:13:00.374 | INFO     | __main__:main:173 - ==================================
+2025-11-09 19:13:00.375 | INFO     | __main__:main:175 - Root         : C:\Projects\smart-store-jacobsellinger
+2025-11-09 19:13:00.375 | INFO     | __main__:main:176 - data/raw     : C:\Projects\smart-store-jacobsellinger\data\raw
+2025-11-09 19:13:00.375 | INFO     | __main__:main:177 - data/prepared: C:\Projects\smart-store-jacobsellinger\data\prepared
+2025-11-09 19:13:00.375 | INFO     | __main__:main:178 - scripts      : C:\Projects\smart-store-jacobsellinger\src
+2025-11-09 19:13:00.375 | INFO     | __main__:read_raw_data:58 - READING: C:\Projects\smart-store-jacobsellinger\data\raw\customers_data.csv.
+2025-11-09 19:13:00.378 | INFO     | __main__:main:190 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, InStoreTripPercent, StatedChannelPreference
+2025-11-09 19:13:00.378 | INFO     | __main__:main:191 - Initial dataframe shape: (205, 6)
+2025-11-09 19:13:00.378 | INFO     | __main__:remove_duplicates:94 - FUNCTION START: remove_duplicates with dataframe shape=(205, 6)
+2025-11-09 19:13:00.379 | INFO     | __main__:remove_duplicates:105 - Original dataframe shape: (205, 6)
+2025-11-09 19:13:00.379 | INFO     | __main__:remove_duplicates:106 - Deduped  dataframe shape: (205, 6)
+2025-11-09 19:13:00.379 | INFO     | __main__:handle_missing_values:122 - FUNCTION START: handle_missing_values with dataframe shape=(205, 6)
+2025-11-09 19:13:00.380 | INFO     | __main__:handle_missing_values:126 - Total missing values before handling: 0
+2025-11-09 19:13:00.380 | INFO     | __main__:handle_missing_values:135 - Total missing values after handling: 0
+2025-11-09 19:13:00.380 | INFO     | __main__:handle_missing_values:136 - 205 records remaining after handling missing values.
+2025-11-09 19:13:00.381 | INFO     | __main__:remove_outliers:150 - FUNCTION START: remove_outliers with dataframe shape=(205, 6)
+2025-11-09 19:13:00.381 | INFO     | __main__:remove_outliers:158 - Removed 5 outlier rows
+2025-11-09 19:13:00.381 | INFO     | __main__:remove_outliers:159 - 200 records remaining after removing outliers.
+2025-11-09 19:13:00.381 | INFO     | __main__:save_prepared_data:76 - FUNCTION START: save_prepared_data with file_name=customers_prepared.csv, dataframe shape=(200, 6)
+2025-11-09 19:13:00.383 | INFO     | __main__:save_prepared_data:79 - Data saved to C:\Projects\smart-store-jacobsellinger\data\prepared\customers_prepared.csv
+2025-11-09 19:13:00.384 | INFO     | __main__:main:214 - ==================================
+2025-11-09 19:13:00.384 | INFO     | __main__:main:215 - Original shape: (200, 6)
+2025-11-09 19:13:00.384 | INFO     | __main__:main:216 - Cleaned shape:  (205, 6)
+2025-11-09 19:13:00.384 | INFO     | __main__:main:217 - ==================================
+2025-11-09 19:13:00.384 | INFO     | __main__:main:218 - FINISHED prepare_customers_data.py
+2025-11-09 19:13:00.384 | INFO     | __main__:main:219 - ==================================
