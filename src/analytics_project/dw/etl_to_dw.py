@@ -82,7 +82,9 @@ def create_schema(cursor: sqlite3.Cursor) -> None:
             customer_id INTEGER PRIMARY KEY,
             name TEXT,
             region TEXT,
-            join_date TEXT
+            join_date TEXT,
+            InStoreTripPercent REAL,
+            StatedChannelPreference TEXT
         )
     """)
 
@@ -91,7 +93,9 @@ def create_schema(cursor: sqlite3.Cursor) -> None:
             product_id INTEGER PRIMARY KEY,
             product_name TEXT,
             category TEXT,
-            unit_price REAL
+            unit_price REAL,
+            quantityonhand REAL,
+            channelavailability TEXT
         )
     """)
 
