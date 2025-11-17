@@ -106,6 +106,11 @@ def create_schema(cursor: sqlite3.Cursor) -> None:
             product_id INTEGER,
             sale_amount REAL,
             sale_date TEXT,
+            store_id INT,
+            campaign_id INT,
+            ReedemableStoreCryptoCurrency REAL,
+            WinCoins TEXT,
+
             FOREIGN KEY (customer_id) REFERENCES customer (customer_id),
             FOREIGN KEY (product_id) REFERENCES product (product_id)
         )
@@ -166,7 +171,7 @@ def load_data_to_db() -> None:
         customers_df = pd.read_csv(CLEAN_DATA_DIR.joinpath("customers_prepared.csv"))
         products_df = pd.read_csv(CLEAN_DATA_DIR.joinpath("products_prepared.csv"))
         # TODO: Uncomment after implementing sales data preparation
-        # sales_df = pd.read_csv(CLEAN_DATA_DIR.joinpath("sales_prepared.csv"))
+        sales_df = pd.read_csv(CLEAN_DATA_DIR.joinpath("sales_prepared.csv"))
 
         # Rename clean columns to match database schema if necessary
         # Clean column name : Database column name
@@ -193,7 +198,18 @@ def load_data_to_db() -> None:
         logger.info(f"Product columns (cleaned):  {list(products_df.columns)}")
 
         # TODO: Rename sales_df columns to match database schema if necessary
-
+        sales_df = sales_df.rename(
+            columns={
+                "TransactionID": "sale_id",
+                "SaleDate": "sale_date",
+                "CustomerID": "customer_id",
+                "ProductID": "product_id",
+                "StoreID":"store_id",
+                "CampaignID":"campaign_id",
+                "SaleAmount":"sale_amount",
+                "ReedemableStoreCryptoCurrency":"ReedemableStoreCryptoCurrency",
+                "WinCoins":"WinCoins",
+            })
         # Insert data into the database for all tables
 
         insert_customers(customers_df, cursor)
@@ -201,7 +217,7 @@ def load_data_to_db() -> None:
         insert_products(products_df, cursor)
 
         # TODO: Uncomment after implementing sales data preparation
-        # insert_sales(sales_df, cursor)
+        insert_sales(sales_df, cursor)
 
         conn.commit()
         logger.info("ETL finished successfully. Data loaded into the warehouse.")
